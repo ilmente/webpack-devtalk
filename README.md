@@ -2,8 +2,13 @@
 # Webpack DevTalk (06.07.2016)
 > by Alessandro Bellini - [ilmente.com](https://ilmente.com)
 
-This repo contains the [presentation (pdf)](https://github.com/ilmente/webpack-devtalk/blob/master/docs/webpack-devtalk.pdf) 
-and the 3 webpack examples I did for my devtalk about webpack.
+This repo contains: 
+
+- [webpack presentation (pdf)](https://github.com/ilmente/webpack-devtalk/blob/master/docs/webpack-devtalk.pdf);
+- [Spryker antelope presentation (pdf)](https://github.com/ilmente/webpack-devtalk/blob/master/docs/antelope-devtalk.pdf);
+- 3 webpack application examples;
+
+I did for my webpack devtalk.
 
 ### Requirements
 
