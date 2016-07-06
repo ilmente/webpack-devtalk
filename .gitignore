@@ -1,0 +1,11 @@
+#
+# general
+#
+logs
+*.log
+pids
+*.pid
+*.seed
+public
+node_modules
+.sass-cache

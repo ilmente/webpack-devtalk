@@ -1,0 +1,13 @@
+/**
+ *
+ * @name: webpack devtalk
+ * @author: Alessandro Bellini <hello@ilmente.com>
+ *
+ */
+
+// shared
+@import 'shared/settings';
+@import 'shared/functions';
+
+// no js
+@import 'nojs/modules';

@@ -1,0 +1,10 @@
+<ul>
+{% for desc in commands %}
+    {% if loop.first %}
+    <li><em>{{desc}}</em></li>
+    <li>&nbsp;</li>
+    {% else %}
+    <li>{{loop.index - 1}}. <strong>{{loop.key}}</strong>: {{desc}}</li>
+    {% endif %}
+{% endfor %}
+</ul>

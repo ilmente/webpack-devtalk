@@ -1,0 +1,12 @@
+/**
+ *
+ * @name: webpack devtalk
+ * @author: Alessandro Bellini <hello@ilmente.com>
+ *
+ */
+
+@mixin slide($x: 0, $y: 0, $options: 350ms ease-in-out) {
+    transform: translate3d($x, $y, 0);
+    transition: transform $options;
+}
+

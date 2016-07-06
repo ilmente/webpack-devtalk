@@ -1,0 +1,53 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+    <h3>Welcome to ACME shop!</h3>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="columns">
+            <div class="callout">
+                <div class="orbit __carousel" role="region" data-orbit>
+                    <ul class="orbit-container">
+                        <button class="orbit-previous">&#9664;&#xFE0E;</button>
+                        <button class="orbit-next">&#9654;&#xFE0E;</button>
+                        {% for image in [1, 2, 3, 4] %}
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="http://placehold.it/1200x400?text=Amazing+product+{{image}}" alt="Space">
+                            <figcaption class="orbit-caption">Product description {{image}}</figcaption>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"></button>
+                        <button data-slide="1"></button>
+                        <button data-slide="2"></button>
+                        <button data-slide="3"></button>
+                    </nav>
+                </div>
+                <noscript>
+                    <img class="orbit-image" src="http://placehold.it/1200x500?text=Amazing+product" alt="Space">
+                </noscript>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for item in [1, 2, 3, 4, 5, 6] %}
+        <div class="small-12 medium-6 large-4 columns">
+            <div class="callout">
+                <a href="/details" class="thumbnail">
+                    <img src="http://placehold.it/600x350?text=Item+{{item}}"> 
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    Aenean commodo ligula eget dolor. Aenean massa.
+                </p>
+                <a class="button expanded" href="/details">View &raquo;</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

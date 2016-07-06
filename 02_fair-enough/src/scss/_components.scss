@@ -1,0 +1,61 @@
+/**
+ *
+ * @name: webpack devtalk
+ * @author: Alessandro Bellini <hello@ilmente.com>
+ *
+ */
+
+.promt {
+    display: block;
+    height: 10rem;
+}
+
+.promt-arrow {
+    float: left;
+    display: inline-block;
+    margin-left: -3ch;
+    color: $colorTextAlt;
+}
+
+.promt-input {
+    @extend p;
+
+    display: block;
+    width: 100%;
+}
+
+.output {}
+
+.output-text {
+    position: relative;
+}
+
+.output-text-init {
+    @extend p;
+
+    .output-code {
+        display: none;
+    }
+}
+
+.output-text-command {
+    margin-top: $lineHeight;
+    font-weight: bold;
+
+    .output-code {
+        display: none;
+    }
+}
+
+.output-code {
+    display: inline-block;
+    position: absolute;
+    left: -6ch;
+    color: $colorTextAlt;
+}
+
+.ilmente {
+    float: right;
+    width: 10rem;
+
+}

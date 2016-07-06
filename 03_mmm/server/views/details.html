@@ -1,0 +1,106 @@
+{% extends '_layout.html' %}
+
+{% block title %}
+    <h3>Wonderful choice</h3>
+{% endblock %}
+
+{% block breadcrumbs %}
+    <li><a href="/">Home</a></li>
+    <li><a href="#">Category 1</a></li>
+    <li><a href="#">SubCategory 1.2</a></li>
+    <li>Details</li>
+    <li class="disabled">Some other following page</li>
+{% endblock %}
+
+{% block outside %}
+    <div class="row hide-for-xlarge">
+        <div class="small-12 columns">
+            <div class="__image-viewer-block">
+                {% for image in [1, 2, 3, 4] %}
+                <div data-viewer-id="{{image}}" data-viewer-reset>
+                    <a class="close-button">&times;</a>
+                    <img class="thumbnail" src="http://placehold.it/800x400?text=Image+{{image}}">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div id="details" class="row">
+        <div class="small-12 medium-6 xlarge-7 xxlarge-8 columns">
+            <div class="callout text-center">
+                <div class="row show-for-xlarge">
+                    <div class="small-12 columns">
+                        <div class="__image-viewer-inline">
+                            {% for image in [1, 2, 3, 4] %}
+                            <div data-viewer-id="{{image}}" {% if loop.first %}data-viewer-default{% endif %}>
+                                <img class="thumbnail" src="http://placehold.it/800x400?text=Image+{{image}}">
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div class="row">
+                            {% for image in [1, 2, 3, 4] %}
+                            <a class="small-6 medium-6 large-6 xlarge-expand columns" href="http://placehold.it/800x400?text=Image+{{image}}" target="_blank" data-viewer-show="{{image}}">
+                                <img class="thumbnail" src="http://placehold.it/200x100?text=Thumbnail+{{image}}">
+                            </a>    
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-12 medium-6 xlarge-5 xxlarge-4 columns">
+            <div class="callout">
+                <h5><small>by</small> ACME brand</h5>
+                <p>
+                    <span class="stat">113.50</span>&euro;
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    Aenean commodo ligula eget dolor. Aenean massa.
+                </p>
+                <form class="row align-bottom" method="POST">
+                    <div class="small-12 columns">
+                        <label>
+                            Variants
+                            <select name="variant">
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="yellow">Yellow</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="small-12 large-6 columns">
+                        <label>
+                            Quantity
+                            <input type="number" value="1" name="quantity">
+                        </label>
+                    </div>
+                    <div class="small-12 large-6 columns">
+                        <button type="button" class="button expanded success">
+                            <i class="fa fa-cart-plus"></i>Add to cart
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="callout">
+                <h5>Description</h5>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

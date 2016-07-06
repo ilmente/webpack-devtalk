@@ -1,0 +1,31 @@
+/**
+ *
+ * @name: webpack devtalk
+ * @author: Alessandro Bellini <hello@ilmente.com>
+ *
+ */
+
+$unit: 1.5rem;
+
+html {
+    font-size: 130%;
+}
+
+body {
+    padding: $unit 0;
+    background-color: #fff;
+    font-family: 'Courier new', monospace;
+    font-size: 1rem;
+    line-height: $unit;
+    color: #333;
+}
+
+h1 {
+    padding: $unit 0;
+    font-weight: bold;
+}
+
+.page {
+    max-width: $unit * 20;
+    margin: auto;
+}

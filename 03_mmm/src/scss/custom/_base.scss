@@ -1,0 +1,27 @@
+/**
+ *
+ * @name: webpack devtalk
+ * @author: Alessandro Bellini <hello@ilmente.com>
+ *
+ */
+
+* {
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+i {
+    margin: 0 0.3rem;
+}
+
+.__padding-top {
+    padding-top: $global-padding;
+}
+
+.__no-margin-bottom {
+    margin-bottom: 0;
+}
+
