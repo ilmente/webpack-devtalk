@@ -8,7 +8,7 @@ This repo contains:
 - [Spryker antelope presentation (pdf)](https://github.com/ilmente/webpack-devtalk/blob/master/docs/antelope-devtalk.pdf);
 - 3 webpack application examples;
 
-I did for my webpack devtalk.
+I did it for my webpack devtalk.
 
 ### Requirements
 
@@ -17,7 +17,7 @@ I did for my webpack devtalk.
 - webpack 1.13.x globally installed
 
 ### 01 Easy Peasy
-The siplest. A very basic and minimal webpack application. 
+The simplest. A very basic and minimal webpack application.
 You need **apache** server (or **nginx**) in order to make it works.
 
 ``` bash

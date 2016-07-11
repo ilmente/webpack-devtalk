@@ -9,3 +9,4 @@ pids
 public
 node_modules
 .sass-cache
+.idea/
