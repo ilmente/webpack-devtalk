@@ -8,7 +8,7 @@ This repo contains:
 - [Spryker antelope presentation (pdf)](https://github.com/ilmente/webpack-devtalk/blob/master/docs/antelope-devtalk.pdf);
 - 3 webpack application examples;
 
-I did it for my webpack devtalk.
+I did it for my webpack devtalk. Here is the link to the [presentation video](https://www.periscope.tv/w/1rmxPpzWbwmxN).
 
 ### Requirements
 
